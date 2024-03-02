@@ -473,52 +473,24 @@
       ""
     ],
     [
-      "7c262553-0997-4ed4-b1ff-a60f268d38d9",
-      "Root Hub"
+      "8937bed4-6828-4454-89c8-1b35a8727920",
+      "Port 1-2"
     ],
     [
-      "0273614c-8fc1-4899-8fa4-46cdf5b7aa83",
-      "Downstream 1"
+      "e4072a52-9590-4e39-979b-f260e0b30036",
+      "Port 3-4"
     ],
     [
-      "b518fa31-d772-4165-ac9e-26d7a98f5023",
-      "Downstream 2"
+      "0dfbc366-5776-46ba-b0f0-945b1be119b5",
+      "Port 5-6"
     ],
     [
-      "c25580b2-36d2-4f37-b9ba-fc0329c2a5fc",
-      "Downstream 3"
-    ],
-    [
-      "b3ea772f-1d8d-4fcd-beda-7648065e5364",
-      "Power controller"
-    ],
-    [
-      "62949caf-3684-4301-b88a-92cd68301292",
+      "e35210e8-490f-4665-90b3-f7b898938663",
       "Power"
     ],
     [
-      "c26d090d-eb19-4fb9-b158-4af39380f31f",
-      "Port 3-4"
-    ],
-    [
-      "785d5957-539d-41a6-a807-290aaf1cd912",
-      "Port 1-2"
-    ],
-    [
-      "785d5957-539d-41a6-a807-290aaf1cd912",
-      "Port 1-2"
-    ],
-    [
-      "785d5957-539d-41a6-a807-290aaf1cd912",
-      "Port 1-2"
-    ],
-    [
-      "c26d090d-eb19-4fb9-b158-4af39380f31f",
-      "Port 3-4"
-    ],
-    [
-      "c26d090d-eb19-4fb9-b158-4af39380f31f",
-      "Port 3-4"
+      "f363ca4e-9eae-4a80-adbb-f14205056cfe",
+      "Power controller"
     ]
   ],
   "text_variables": {
