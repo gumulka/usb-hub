@@ -1069,7 +1069,7 @@
   (symbol (lib_id "power:+3V3") (at 19.05 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08534f69-1dcb-482d-aa14-87e67b3b4bc9)
-    (property "Reference" "#PWR0603" (at 19.05 24.13 0)
+    (property "Reference" "#PWR0601" (at 19.05 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 19.05 15.24 0)
@@ -1085,7 +1085,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR0601") (unit 1)
         )
       )
     )
@@ -1094,16 +1094,19 @@
   (symbol (lib_id "Device:C") (at 88.9 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0f118d9e-76f2-44e2-92b9-35b4ffc35832)
-    (property "Reference" "C609" (at 92.71 25.4 0)
+    (property "Reference" "C606" (at 92.71 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.0uF" (at 92.71 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 89.8652 30.48 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 89.8652 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 88.9 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC#" "C15849" (at 88.9 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e463d613-00ca-40de-b8e4-0daa27851fba))
@@ -1111,7 +1114,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "C609") (unit 1)
+          (reference "C606") (unit 1)
         )
       )
     )
@@ -1120,7 +1123,7 @@
   (symbol (lib_id "Device:R") (at 40.64 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 286a2b54-15c3-43e1-bba1-776774e50ede)
-    (property "Reference" "R604" (at 43.18 81.28 0)
+    (property "Reference" "R602" (at 43.18 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 43.18 83.82 0)
@@ -1132,12 +1135,18 @@
     (property "Datasheet" "~" (at 40.64 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C25744" (at 40.64 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "10k" (at 40.64 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "2" (uuid 53208787-1db6-4872-8d23-dd25839c2134))
     (pin "1" (uuid 5b57a7f9-a9c3-4913-a100-ce0ae20f60fa))
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "R604") (unit 1)
+          (reference "R602") (unit 1)
         )
       )
     )
@@ -1146,7 +1155,7 @@
   (symbol (lib_id "power:+3V3") (at 245.11 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2df55768-cf2a-414a-aeab-d66c19f42804)
-    (property "Reference" "#PWR0609" (at 245.11 111.76 0)
+    (property "Reference" "#PWR0607" (at 245.11 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 245.11 102.87 0)
@@ -1162,7 +1171,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0609") (unit 1)
+          (reference "#PWR0607") (unit 1)
         )
       )
     )
@@ -1171,7 +1180,7 @@
   (symbol (lib_id "power:+3V3") (at 55.88 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 32047ec7-6ca0-4feb-92ea-77532f2baf36)
-    (property "Reference" "#PWR0611" (at 55.88 78.74 0)
+    (property "Reference" "#PWR0606" (at 55.88 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 55.88 69.85 0)
@@ -1187,7 +1196,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0611") (unit 1)
+          (reference "#PWR0606") (unit 1)
         )
       )
     )
@@ -1196,7 +1205,7 @@
   (symbol (lib_id "power:GND") (at 217.17 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35eef35d-d1a6-4616-b9c1-82fcb5144500)
-    (property "Reference" "#PWR0608" (at 217.17 142.24 0)
+    (property "Reference" "#PWR0611" (at 217.17 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 217.17 140.97 0)
@@ -1212,7 +1221,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0608") (unit 1)
+          (reference "#PWR0611") (unit 1)
         )
       )
     )
@@ -1233,6 +1242,9 @@
     (property "Datasheet" "~" (at 74.93 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C307331" (at 74.93 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 53498388-d111-4e18-aa04-ea1aa165492f))
     (pin "2" (uuid de92b211-9510-42c4-87e7-b9f56d8d58d5))
     (instances
@@ -1247,7 +1259,7 @@
   (symbol (lib_id "power:GND") (at 106.68 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 554bdfb1-c68b-4e3a-93ca-1f75da5954df)
-    (property "Reference" "#PWR0605" (at 106.68 76.2 0)
+    (property "Reference" "#PWR0604" (at 106.68 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 74.93 0)
@@ -1263,7 +1275,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR0604") (unit 1)
         )
       )
     )
@@ -1282,6 +1294,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 33.02 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC#" "C307331" (at 33.02 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid dc24e79c-0971-428b-ac7d-87240bc8794b))
@@ -1310,6 +1325,9 @@
     (property "Datasheet" "~" (at 46.99 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C307331" (at 46.99 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5dabe54d-16b8-4ca9-95b7-88945fde5db8))
     (pin "2" (uuid 96f8cdf6-34a4-4cf2-a794-e56673a9bbeb))
     (instances
@@ -1324,7 +1342,7 @@
   (symbol (lib_id "power:GND") (at 19.05 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c93cb4b-d321-4ff9-8264-a56678309559)
-    (property "Reference" "#PWR0604" (at 19.05 39.37 0)
+    (property "Reference" "#PWR0602" (at 19.05 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 19.05 38.1 0)
@@ -1340,7 +1358,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0604") (unit 1)
+          (reference "#PWR0602") (unit 1)
         )
       )
     )
@@ -1349,7 +1367,7 @@
   (symbol (lib_id "power:GND") (at 245.11 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d8b0c69-faeb-4373-bebb-48ed0bb704f7)
-    (property "Reference" "#PWR0610" (at 245.11 135.89 0)
+    (property "Reference" "#PWR0609" (at 245.11 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 245.11 134.62 0)
@@ -1365,7 +1383,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0610") (unit 1)
+          (reference "#PWR0609") (unit 1)
         )
       )
     )
@@ -1387,6 +1405,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC#" "C9861" (at 140.97 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "STM32L151C8T6" (at 140.97 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "17" (uuid bbfa4f74-bd4b-4952-859d-7c2758dda297))
@@ -1449,7 +1470,7 @@
   (symbol (lib_id "power:+3V3") (at 138.43 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 841ec41e-5e84-49be-87ca-56796f710529)
-    (property "Reference" "#PWR0601" (at 138.43 44.45 0)
+    (property "Reference" "#PWR0603" (at 138.43 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 138.43 35.56 0)
@@ -1465,7 +1486,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR0603") (unit 1)
         )
       )
     )
@@ -1474,7 +1495,7 @@
   (symbol (lib_id "power:+3V3") (at 40.64 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91d37051-12f8-4db4-8e55-e358c758610d)
-    (property "Reference" "#PWR0606" (at 40.64 78.74 0)
+    (property "Reference" "#PWR0605" (at 40.64 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 40.64 69.85 0)
@@ -1490,7 +1511,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0606") (unit 1)
+          (reference "#PWR0605") (unit 1)
         )
       )
     )
@@ -1511,6 +1532,9 @@
     (property "Datasheet" "~" (at 19.05 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C307331" (at 19.05 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid daae6aad-a7ee-4e54-8c32-a1f6727f314b))
     (pin "2" (uuid 8bb8a31d-1ddc-4117-a11b-865c10b5023c))
     (instances
@@ -1525,7 +1549,7 @@
   (symbol (lib_id "power:+3V3") (at 217.17 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e8c7799-e29b-4ce4-aaf7-1f145c112faf)
-    (property "Reference" "#PWR0607" (at 217.17 114.3 0)
+    (property "Reference" "#PWR0608" (at 217.17 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 217.17 105.41 0)
@@ -1541,7 +1565,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0607") (unit 1)
+          (reference "#PWR0608") (unit 1)
         )
       )
     )
@@ -1562,6 +1586,9 @@
     (property "Datasheet" "~" (at 60.96 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C307331" (at 60.96 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b57eb2a7-24e9-4518-ace2-0a1bf06ce548))
     (pin "2" (uuid 1af702ba-bcba-4bb6-84a1-3c05a9e15196))
     (instances
@@ -1576,7 +1603,7 @@
   (symbol (lib_id "Device:R") (at 245.11 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a8528000-932e-457b-822f-32ad429369dc)
-    (property "Reference" "R602" (at 247.65 111.76 0)
+    (property "Reference" "R604" (at 247.65 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 247.65 114.3 0)
@@ -1588,12 +1615,18 @@
     (property "Datasheet" "~" (at 245.11 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C25741" (at 245.11 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "100K" (at 245.11 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ba2dac94-3653-4796-acee-48ed0d59b67a))
     (pin "2" (uuid 00d364be-6112-41bb-b6f2-acb00ce17a45))
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "R602") (unit 1)
+          (reference "R604") (unit 1)
         )
       )
     )
@@ -1612,6 +1645,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf" (at 219.71 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC#" "-" (at 219.71 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "6" (uuid cffba6a7-da02-4096-a615-ed90938ffdfb))
@@ -1644,6 +1680,12 @@
     (property "Datasheet" "~" (at 55.88 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C25744" (at 55.88 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "10k" (at 55.88 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "2" (uuid 317f9dae-459a-4f67-9a6e-fb7694690d5c))
     (pin "1" (uuid b1ad46c6-3c95-4f8a-91ea-ebc5af9923d0))
     (instances
@@ -1668,6 +1710,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 106.68 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC#" "C25744" (at 106.68 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "10k" (at 106.68 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "2" (uuid 5e2a3fb4-9b29-4682-a1fb-b1f345d85d9e))
@@ -1696,6 +1744,9 @@
     (property "Datasheet" "~" (at 245.11 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C307331" (at 245.11 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid db9728dd-801c-4846-83f6-bbe00c666284))
     (pin "2" (uuid 62a2c334-d8b0-4a2a-8126-b013a8a6d355))
     (instances
@@ -1710,7 +1761,7 @@
   (symbol (lib_id "power:GND") (at 143.51 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e2f56f55-9db4-490e-b5f3-e5c4cbb794d1)
-    (property "Reference" "#PWR0602" (at 143.51 138.43 0)
+    (property "Reference" "#PWR0610" (at 143.51 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 137.16 0)
@@ -1726,7 +1777,7 @@
     (instances
       (project "usb-hub"
         (path "/b46faf57-adcb-44f4-ac46-f905e4e8952b/f363ca4e-9eae-4a80-adbb-f14205056cfe"
-          (reference "#PWR0602") (unit 1)
+          (reference "#PWR0610") (unit 1)
         )
       )
     )
