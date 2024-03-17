@@ -55,7 +55,33 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|132100000|41880000|fd726fc1-ced6-4ad9-b297-2241fe14e560|601f59c2-2b22-4014-8f3c-dc11bb5d986f",
+        "hole_clearance|132100000|41880000|fd726fc1-ced6-4ad9-b297-2241fe14e560|c636a489-369a-4e5b-a11b-55a27dbcdb21",
+        "hole_clearance|132300000|41880000|fd726fc1-ced6-4ad9-b297-2241fe14e560|0f2ef7be-b986-4732-969b-c759a52650da",
+        "hole_clearance|132300000|41880000|fd726fc1-ced6-4ad9-b297-2241fe14e560|720edb41-0dc6-4a91-8355-9c0801ca042a",
+        "hole_clearance|137700000|41880000|ad7b3871-f701-49f7-ae1b-298f28c4aaac|5297d90b-85bf-4778-8147-5253416892e7",
+        "hole_clearance|137700000|41880000|ad7b3871-f701-49f7-ae1b-298f28c4aaac|569f4271-a55f-4de9-afa0-8daf8b882f0f",
+        "hole_clearance|137900000|41880000|ad7b3871-f701-49f7-ae1b-298f28c4aaac|d034a363-5c30-44e0-ac50-2c4ca56c2eb9",
+        "hole_clearance|137900000|41880000|ad7b3871-f701-49f7-ae1b-298f28c4aaac|fce9109b-a89c-47e7-8d90-fbe373e72892",
+        "starved_thermal|113500000|167800000|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|6989a5ae-61f5-4bdb-a3ce-c8607e9e0962|F.Cu",
+        "starved_thermal|113500000|87800000|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|16a532e7-d4d4-458f-9ec4-22a71f4050d1|F.Cu",
+        "starved_thermal|129551992|135048008|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|3657d1ec-963d-4d76-b0ae-3b5cfd456f10|F.Cu",
+        "starved_thermal|136092679|139127856|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|a5f253c4-b8b6-4213-87ec-a4fb1f2c74d8|B.Cu",
+        "starved_thermal|136092679|139127856|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|a5f253c4-b8b6-4213-87ec-a4fb1f2c74d8|F.Cu",
+        "starved_thermal|136092679|141107754|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|aab8f70d-73d6-49e6-a3e1-d86be1179f3f|B.Cu",
+        "starved_thermal|136092679|141107754|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|aab8f70d-73d6-49e6-a3e1-d86be1179f3f|F.Cu",
+        "starved_thermal|137082629|138137906|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|d19c1bff-ddf6-4be7-aa8a-36968c41f2c3|B.Cu",
+        "starved_thermal|137082629|138137906|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|d19c1bff-ddf6-4be7-aa8a-36968c41f2c3|F.Cu",
+        "starved_thermal|137082629|142097704|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|e03b20ee-7532-4c64-9be4-3018b3bf9ed4|B.Cu",
+        "starved_thermal|137082629|142097704|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|e03b20ee-7532-4c64-9be4-3018b3bf9ed4|F.Cu",
+        "starved_thermal|138072578|139127856|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|06bb5e9b-3e90-44c4-8438-f9479d81193b|F.Cu",
+        "starved_thermal|138072578|141107754|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|d8a92f67-886c-4e96-bad5-4f02c7ce5c0a|B.Cu",
+        "starved_thermal|138072578|141107754|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|d8a92f67-886c-4e96-bad5-4f02c7ce5c0a|F.Cu",
+        "starved_thermal|139062527|138137906|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|11d0d91a-8088-4bb5-a064-bcb0d883dd9f|B.Cu",
+        "starved_thermal|139062527|140117805|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|404952c7-6c41-4de7-96ff-29d9020bbd12|B.Cu",
+        "starved_thermal|140052477|139127856|06e9a43e-bda9-42b0-9f1f-7296ba53a5e3|223bd684-e470-4a57-a6de-774a219696d7|B.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -91,7 +117,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -111,21 +137,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_copper_edge_clearance": 0.39999999999999997,
+        "min_hole_clearance": 0.32999999999999996,
+        "min_hole_to_hole": 0.5,
+        "min_microvia_diameter": 0.25,
+        "min_microvia_drill": 0.15,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.13,
+        "min_via_diameter": 0.44999999999999996,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -195,7 +221,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|355600|1054100|1afa6ffa-0738-4d5b-8810-e9c7bf5445d0|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -431,6 +459,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.0127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.211074,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.211074,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -438,7 +483,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "/Port*USB*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*USB_UP*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/Power*USB*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
