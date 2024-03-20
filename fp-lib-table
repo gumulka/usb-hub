@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "g-Connector_USB")(type "KiCad")(uri "${KIPRJMOD}/library/g-Connector_USB.pretty")(options "")(descr ""))
+  (lib (name "g-Inductors")(type "KiCad")(uri "${KIPRJMOD}/library/g-Inductors.pretty")(options "")(descr ""))
+)
