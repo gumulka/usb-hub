@@ -33,3 +33,6 @@ rescue-backup/
 *.tsv
 bom/
 
+Gerbers/
+Output/
+usb-hub.zip
