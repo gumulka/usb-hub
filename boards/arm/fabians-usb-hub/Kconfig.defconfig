@@ -1,0 +1,9 @@
+# Copyright (c) 2024 Fabian Pflug
+# SPDX-License-Identifier: Apache-2.0
+
+if FABIANS_USB_HUB
+
+config BOARD
+	default "fabians_usb_hub"
+
+endif # FABIANS_USB_HUB
