@@ -1,6 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "fabian_usb")(type "KiCad")(uri "/home/pflug/kicad_projects/fabian_usb.kicad_sym")(options "")(descr ""))
   (lib (name "g-usb")(type "KiCad")(uri "${KIPRJMOD}/library/g-usb.kicad_sym")(options "")(descr ""))
   (lib (name "g-power")(type "KiCad")(uri "${KIPRJMOD}/library/g-power.kicad_sym")(options "")(descr ""))
 )
