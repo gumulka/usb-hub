@@ -1,0 +1,23 @@
+# Copyright (c) 2024 Fabian Pflug
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Port toggle binding for my usb hub. Each enable GPIO is an output, that is
+  connected to the MOSFET, that enables power for the USB port. Each request
+  GPIO is connected to a button, that should toggle the output of the
+  corresponding enable gpio.
+
+compatible: "usb-hub-ports"
+
+include: base.yaml
+
+properties:
+  enable-gpios:
+    type: phandle-array
+    required: true
+    description: Array of IO pins to activate the usb hub ports
+
+  request-gpios:
+    type: phandle-array
+    required: true
+    description: Array of IO pins to request a toggle of the usb hub ports

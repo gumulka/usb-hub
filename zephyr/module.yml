@@ -4,5 +4,8 @@
 name: fabians_usb_hub
 
 build:
+  kconfig: Kconfig
+  cmake: .
   settings:
     board_root: .
+    dts_root: .

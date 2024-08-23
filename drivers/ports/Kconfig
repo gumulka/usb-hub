@@ -1,0 +1,19 @@
+# Copyright (c) 2024 Fabian Pflug
+# SPDX-License-Identifier: Apache-2.0
+
+config HUB_PORTS
+	bool "usb hub ports device drivers"
+	default y
+	depends on DT_HAS_USB_HUB_PORTS_ENABLED
+	select GPIO
+	help
+	  Custom driver class for usb-hub ports to be toggled via request GPIO's or
+	  via call to it.
+
+if HUB_PORTS
+
+module = HUB_PORTS
+module-str = HUB_PORTS
+source "subsys/logging/Kconfig.template.log_config"
+
+endif # HUB_PORTS
