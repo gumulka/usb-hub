@@ -1,7 +1,7 @@
 # Copyright (c) 2021 Nordic Semiconductor ASA
 # SPDX-License-Identifier: Apache-2.0
 
-board_runner_args(jlink "--device=stm32f072cb")
+board_runner_args(jlink "--device=stm32f072cb" "--speed=4000" "--reset-after-load")
 board_runner_args(pyocd "--target=stm32f072cb")
 
 include(${ZEPHYR_BASE}/boards/common/jlink.board.cmake)
