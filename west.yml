@@ -5,6 +5,8 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
+    - name: gumulka
+      url-base: https://github.com/gumulka
 
   projects:
     - name: zephyr
@@ -15,3 +17,7 @@ manifest:
           - cmsis
           - hal_stm32
           - segger
+    - name: mcuboot
+      remote: gumulka
+      revision: 859688998261c16e2be230a7d0f400de56811160
+      path: bootloader/mcuboot

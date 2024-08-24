@@ -8,8 +8,24 @@
     compatible = "vendor,fabians-usb-hub";
 
     chosen {
+        zephyr,console = &usart1;
+        zephyr,shell-uart = &usart1;
+		zephyr,uart-mcumgr = &usart1;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
+        zephyr,code-partition = &slot0_partition;
+    };
+
+    buttons {
+		compatible = "gpio-keys";
+		mcuboot_button0: mcuboot_button0 {
+			gpios = <&gpiob 4 GPIO_ACTIVE_LOW>;
+			label = "DFU-Boot request";
+		};
+	};
+
+	aliases {
+		mcuboot-button0 = &mcuboot_button0;
     };
 
     usb_hub_ports {
@@ -49,5 +65,35 @@
 };
 
 &iwdg {
+    status = "okay";
+};
+
+zephyr_udc0: &usb {
+    pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+    pinctrl-names = "default";
+    status = "okay";
+};
+
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        boot_partition: partition@0 {
+            label = "mcuboot";
+            reg = <0x00000000 DT_SIZE_K(48)>;
+        };
+        slot0_partition: partition@C000 {
+            label = "image-0";
+            reg = <0x0000C000 DT_SIZE_K(80)>;
+        };
+    };
+};
+
+&usart1 {
+    pinctrl-0 = <&usart1_tx_pb6 &usart1_rx_pb7>;
+    pinctrl-names = "default";
+    current-speed = <115200>;
     status = "okay";
 };
