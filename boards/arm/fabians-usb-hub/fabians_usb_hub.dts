@@ -91,6 +91,24 @@ zephyr_udc0: &usb {
     };
 };
 
+&i2c2 {
+    pinctrl-0 = <&i2c2_scl_pb10 &i2c2_sda_pb11>;
+    pinctrl-names = "default";
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+
+    hub_i2c: usb2517@2c {
+        compatible = "mcp,usb2517";
+        status = "okay";
+        reg = <0x2c>;
+        reset-gpios = <&gpioa 9 GPIO_ACTIVE_LOW>;
+        config-gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>,
+                       <&gpiob 12 GPIO_ACTIVE_HIGH>;
+        suspend-indicator-gpios = <&gpiob 14 GPIO_ACTIVE_LOW>;
+    };
+};
+
+
 &usart1 {
     pinctrl-0 = <&usart1_tx_pb6 &usart1_rx_pb7>;
     pinctrl-names = "default";

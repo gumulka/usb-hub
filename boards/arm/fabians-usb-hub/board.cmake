@@ -4,5 +4,6 @@
 board_runner_args(jlink "--device=stm32f072cb" "--speed=4000" "--reset-after-load")
 board_runner_args(pyocd "--target=stm32f072cb")
 
+include(${ZEPHYR_BASE}/boards/common/openocd.board.cmake)
 include(${ZEPHYR_BASE}/boards/common/jlink.board.cmake)
 include(${ZEPHYR_BASE}/boards/common/pyocd.board.cmake)
