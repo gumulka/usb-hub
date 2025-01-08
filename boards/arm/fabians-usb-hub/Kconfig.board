@@ -3,4 +3,4 @@
 
 config FABIANS_USB_HUB
 	bool "Fabians USB Hub"
-	depends on SOC_STM32F072XB
+	depends on SOC_STM32L151XC
