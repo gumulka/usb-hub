@@ -26,7 +26,7 @@
 
 	aliases {
 		mcuboot-button0 = &mcuboot_button0;
-    };
+	};
 
     usb_hub_ports {
         compatible = "usb-hub-ports";
@@ -69,6 +69,9 @@
 };
 
 zephyr_udc0: &usb {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+    };
     pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
     pinctrl-names = "default";
     status = "okay";
@@ -96,4 +99,20 @@ zephyr_udc0: &usb {
     pinctrl-names = "default";
     current-speed = <115200>;
     status = "okay";
+};
+
+&i2c2 {
+    pinctrl-0 = <&i2c2_scl_pb10 &i2c2_sda_pb11>;
+    pinctrl-names = "default";
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+
+    usb2517@50 {
+        compatible = "usb2517";
+        status = "okay";
+        reg = <0x50>;
+        reset-gpios = <&gpioa 9 GPIO_ACTIVE_LOW>;
+        config-gpios = <&gpiob 13 GPIO_ACTIVE_LOW>, <&gpiob 12 GPIO_ACTIVE_LOW>;
+        suspend-indicator-gpios = <&gpiob 14 GPIO_ACTIVE_LOW>;
+    };
 };
